@@ -1,0 +1,71 @@
+<!-- <p>ngfor works!</p> -->
+<!-- <div *ngFor="let Movie of movies">
+
+<div>
+    {{Movie.title}}
+</div>
+
+<div>
+    {{Movie.director}}
+</div>
+
+<div>
+    {{Movie.cast}}
+</div>
+
+<div>
+    {{Movie.releaseDate}}
+</div>
+</div> -->
+
+<h2> Singers Details </h2>
+<div *ngFor="let Song of songs">
+    <table class="table"> 
+        <tr>
+            <td class="B">Singer Name : </td>
+            <td>
+                {{Song.singerName}}
+            </td>
+            <td class="B">Song Name : </td>
+            <td>
+                {{Song.songName}}
+            </td>
+            <td class="B">Total Songs : </td>
+            <td>
+                {{Song.noOfsongs}}
+            </td>
+            <td class="B">Movie Name : </td>
+            <td>
+                {{Song.movieName}}
+            </td>
+        </tr>
+    </table>
+    
+</div>
+
+<h2> More Than 50 Songs </h2>
+<div *ngFor="let Song of songs">
+<div *ngIf="Song.noOfsongs>=50">
+
+     <table class="table"> 
+        <tr>
+            <td class="B">Singer Name : </td>
+            <td>
+                {{Song.singerName}}
+            </td>
+            <td class="B">Song Name : </td>
+            <td>
+                {{Song.songName}}
+            </td>
+            <td class="B">Total Songs : </td>
+            <td>
+                {{Song.noOfsongs}}
+            </td>
+            <td class="B">Movie Name : </td>
+            <td>
+                {{Song.movieName}}
+            </td>
+        </tr>
+    </table>
+</div>
+</div>
